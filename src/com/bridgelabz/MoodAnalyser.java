@@ -2,13 +2,23 @@ package com.bridgelabz;
 
 public class MoodAnalyser {
 
+	private String message;
+
+	// Default Constructor
+	public MoodAnalyser() {
+	}
+
+	// Parameterized Constructor
+	public MoodAnalyser(String message) {
+		this.message = message;
+	}
+
 	/**
-	 * Purpose : Given a message, ability to analyse and respond HAPPY or SAD mood
+	 * Purpose : Given a message, ability to analyse and respond HAPPY or SAD mood.
 	 *
-	 * @parameter : message
 	 * @return : HAPPY or SAD
 	 */
-	public String analyseMood(String message) {
+	public String analyseMood() {
 		if (message.contains("sad"))
 			return "SAD";
 		else
